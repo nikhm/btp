@@ -1,0 +1,9 @@
+INSTRUCTIONS
+
+1) Use makeFiles.py which in turn uses test.py to create files according to the decided format. (have only complete articles)
+2) Use makeFinal.py to ultimately create files. (each article has lemmatized words)
+3) Use buildData.py to build a classifer named rfClassifier.pkl .
+4) Use classifierTest.py to check accuracy of the classifer in predicting stock movements
+
+5) 2) needs commonWords.txt which can be generated from generteCommonWords.py
+6) Use customLemmatizer.py as is. Gets POS tags used for lemmatizing articles.
