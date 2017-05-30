@@ -1,0 +1,23 @@
+Use buildClassifier.sh as is. You'll know how that works. A classifier titled 'articleClassifier.pkl' is to be built.
+
+
+The below methods need a classifier titled 'articleClassifier.pkl' to work.
+
+testGenerator.py contains a method txtFromHTML which uses other ancient methods you need not bother about. 
+
+
+txtGenerator.py
+_________________________________________________________________________________________________________
+"""txtFromHTML""" takes in two arguments (link,classifier). 
+link       - The link to page from which article is to be extracted.
+classifier - The classifier that is to be loaded from disk. (Usually it is named 'articleClassifier.pkl')
+
+txtFromHTML uses """doProcess""" methods which has two arguments (htmlTxt,classifier)
+htmlTxt    - Uses 'HTML content' retrieved by txtFromHTML to make an article text.
+classifier - 'articleClassifier.pkl' mentioned above
+_________________________________________________________________________________________________________
+
+Comments are there in case you forget what this code is for. See runResult.sh if you are confused.
+
+html2txt goes through news sources, collects html, uses txtFromHTML of test1.py to retrieve articles.
+ultimately converts all the articles to some (yet to be decided) word2vec format. This word2vec conversion is done by code at getW2V.py 's getVector() method which uses the 8GB vectors.txt (google word2vec) file.
