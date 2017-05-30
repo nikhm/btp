@@ -1,3 +1,3 @@
-# BTP Part-1
+# BTP
 
 Contains work done related to B.Tech Thesis Project.
