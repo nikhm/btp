@@ -17,6 +17,19 @@ htmlTxt    - Uses 'HTML content' retrieved by txtFromHTML to make an article tex
 classifier - 'articleClassifier.pkl' mentioned above
 _________________________________________________________________________________________________________
 
+
+
+newsSaver.py
+_________________________________________________________________________________________________________
+Collects news headlines, time-stamps, article-url. Computes sentiment polarity of news headlines with help 
+of lstm_classifier and saves in a database. 
+*It was planned to use whole article text extracted above for computing the polarity. However, I did not 
+find any prediction capabilty with the model developed (i.e. using the article text with corresponding price change as label). 
+Instead I took data from Semeval Task-5 and tried to compute sentiment polarity for the new headlines. This has 
+reduced the content extraction system to a cosmetic one (Display part of article under the news headline in webpage developed
+for demonstration). Decent results with the polarity system (direction of polarity has ~74% accuracy).
+
+
 Comments are there in case you forget what this code is for. See runResult.sh if you are confused.
 
 html2txt goes through news sources, collects html, uses txtFromHTML of test1.py to retrieve articles.
