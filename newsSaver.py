@@ -21,7 +21,7 @@ Change is to be done in maintainIndex which collects the news articles
 
 #db, cursor = object(), object()
 
-db = MySQLdb.connect('localhost','root','molangur','btp')
+db = MySQLdb.connect('#####','#####','#####','####')
 cursor = db.cursor()
 
 # Get the session 'sess' from lstm_classifier.initiailize()
